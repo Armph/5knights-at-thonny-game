@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="battleMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-image: url('file:res/ab.PNG');" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BattleController">
+   <bottom>
+      <HBox prefHeight="150.0" prefWidth="200.0" spacing="25.0" style="-fx-background-color: DARKGREY; -fx-border-color: black; -fx-border-width: 5;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="pane1" onMouseClicked="#addBar1" prefHeight="200.0" prefWidth="175.0" style="-fx-background-color: OLDLACE; -fx-border-color: GOLDENROD; -fx-border-width: 5;">
+               <children>
+                  <ImageView fx:id="bar1" fitHeight="76.0" fitWidth="160.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" scaleY="1.5" translateX="-15.0" translateY="8.0">
+                     <image>
+                        <Image url="@../../res/DPS.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="count1" alignment="TOP_RIGHT" layoutX="5.0" layoutY="5.0" prefHeight="15.0" prefWidth="155.0" text="L">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="pane2" onMouseClicked="#addBar2" prefHeight="200.0" prefWidth="175.0" style="-fx-background-color: OLDLACE; -fx-border-color: GOLDENROD; -fx-border-width: 5;">
+               <children>
+                  <ImageView fx:id="bar2" fitHeight="75.0" fitWidth="160.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" scaleY="1.5" translateX="-15.0" translateY="8.0">
+                     <image>
+                        <Image url="@../../res/FordRanger.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="count2" alignment="TOP_RIGHT" layoutX="5.0" layoutY="5.0" prefHeight="15.0" prefWidth="155.0" text="L">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="pane3" onMouseClicked="#addBar3" prefHeight="200.0" prefWidth="175.0" style="-fx-background-color: OLDLACE; -fx-border-color: GOLDENROD; -fx-border-width: 5;">
+               <children>
+                  <ImageView fx:id="bar3" fitHeight="75.0" fitWidth="160.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" scaleY="1.5" translateX="-15.0" translateY="8.0">
+                     <image>
+                        <Image url="@../../res/Heal.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="count3" alignment="TOP_RIGHT" layoutX="5.0" layoutY="5.0" prefHeight="15.0" prefWidth="155.0" text="L">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="pane4" onMouseClicked="#addBar4" prefHeight="200.0" prefWidth="175.0" style="-fx-background-color: OLDLACE; -fx-border-color: GOLDENROD; -fx-border-width: 5;">
+               <children>
+                  <ImageView fx:id="bar4" fitHeight="74.0" fitWidth="160.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" scaleY="1.5" translateX="-15.0" translateY="8.0">
+                     <image>
+                        <Image url="@../../res/Mage.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="count4" alignment="TOP_RIGHT" layoutX="5.0" layoutY="5.0" prefHeight="15.0" prefWidth="155.0" text="L">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="pane5" onMouseClicked="#addBar5" prefHeight="200.0" prefWidth="175.0" style="-fx-background-color: OLDLACE; -fx-border-color: GOLDENROD; -fx-border-width: 5;">
+               <children>
+                  <ImageView fx:id="bar5" fitHeight="77.0" fitWidth="160.0" layoutX="20.0" layoutY="15.0" pickOnBounds="true" scaleY="1.5" translateX="-15.0" translateY="8.0">
+                     <image>
+                        <Image url="@../../res/Buff.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="count5" alignment="TOP_RIGHT" layoutX="5.0" layoutY="5.0" prefHeight="15.0" prefWidth="155.0" text="L">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="450.0" spacing="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="slot_pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#show_slot1" onMouseExited="#hide_status" prefHeight="100.0" prefWidth="150.0" translateY="-30.0">
+               <children>
+                  <ImageView fx:id="hole1" fitHeight="114.0" fitWidth="113.0" layoutX="27.0" layoutY="-7.0" onMouseEntered="#show_slot1" onMouseExited="#hide_status" pickOnBounds="true" scaleX="1.5" translateX="-8.0">
+                     <image>
+                        <Image url="@../../res/hole.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="slot1" fitHeight="136.0" fitWidth="129.0" layoutX="42.0" layoutY="-42.0" onMouseClicked="#toSlot1" onMouseEntered="#show_slot1" onMouseExited="#hide_status" pickOnBounds="true" translateX="-30.0" translateY="-5.0" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Pane>
+            <Pane fx:id="slot_pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#show_slot2" onMouseExited="#hide_status" prefHeight="100.0" prefWidth="150.0" translateY="-30.0">
+               <VBox.margin>
+                  <Insets left="150.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fx:id="hole2" fitHeight="107.0" fitWidth="127.0" layoutX="65.0" layoutY="25.0" onMouseEntered="#show_slot2" onMouseExited="#hide_status" pickOnBounds="true" scaleX="1.25" translateX="-55.0" translateY="-30.0">
+                     <image>
+                        <Image url="@../../res/hole.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="slot2" fitHeight="123.0" fitWidth="146.0" layoutX="55.0" layoutY="4.0" onMouseClicked="#toSlot2" onMouseEntered="#show_slot2" onMouseExited="#hide_status" pickOnBounds="true" translateX="-50.0" translateY="-30.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="slot_pane3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#show_slot3" onMouseExited="#hide_status" prefHeight="100.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="hole3" fitHeight="115.0" fitWidth="151.0" layoutX="43.0" layoutY="-8.0" onMouseEntered="#show_slot3" onMouseExited="#hide_status" pickOnBounds="true" scaleX="1.1" x="-40.0">
+                     <image>
+                        <Image url="@../../res/hole.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="slot3" fitHeight="135.0" fitWidth="140.0" layoutX="41.0" layoutY="-20.0" onMouseClicked="#toSlot3" onMouseEntered="#show_slot3" onMouseExited="#hide_status" pickOnBounds="true" translateX="-35.0" translateY="-20.0" />
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="60.0" left="40.0" right="30.0" top="170.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="450.0" spacing="25.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="slot_pane4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#show_slot4" onMouseExited="#hide_status" prefHeight="100.0" prefWidth="150.0" translateX="200.0" translateY="-30.0">
+               <children>
+                  <ImageView fitHeight="110.0" fitWidth="102.0" layoutX="32.0" layoutY="-7.0" pickOnBounds="true" scaleX="1.5" translateX="-9.0">
+                     <image>
+                        <Image url="@../../res/hole.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="slot4" fitHeight="144.0" fitWidth="150.0" layoutX="30.0" layoutY="-44.0" onMouseClicked="#atkE1" onMouseEntered="#show_slot4" onMouseExited="#hide_status" pickOnBounds="true" translateX="-30.0" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <Pane fx:id="slot_pane5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#show_slot5" onMouseExited="#hide_status" prefHeight="100.0" prefWidth="150.0" translateX="70.0" translateY="-30.0">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="133.0" layoutX="67.0" layoutY="29.0" pickOnBounds="true" scaleX="1.25" translateX="-55.0" translateY="-30.0">
+                     <image>
+                        <Image url="@../../res/hole.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="slot5" fitHeight="131.0" fitWidth="146.0" layoutX="54.0" layoutY="-8.0" onMouseClicked="#atkE2" onMouseEntered="#show_slot5" onMouseExited="#hide_status" pickOnBounds="true" translateX="-50.0" translateY="-20.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="slot_pane6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#show_slot6" onMouseExited="#hide_status" prefHeight="100.0" prefWidth="150.0" translateX="175.0">
+               <children>
+                  <ImageView fitHeight="106.0" fitWidth="144.0" layoutX="45.0" layoutY="-3.0" pickOnBounds="true" scaleX="1.1" x="-40.0">
+                     <image>
+                        <Image url="@../../res/hole.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="slot6" fitHeight="126.0" fitWidth="142.0" layoutX="32.0" layoutY="-32.0" onMouseClicked="#atkE3" onMouseEntered="#show_slot6" onMouseExited="#hide_status" pickOnBounds="true" translateX="-25.0" translateY="-5.0" />
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="60.0" left="45.0" right="30.0" top="170.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="418.0" prefWidth="150.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="startButton" fitHeight="50.0" fitWidth="150.0" onMouseClicked="#start_battle" pickOnBounds="true" scaleX="2.5" scaleY="1.5">
+               <image>
+                  <Image url="@../../res/ReadyButtton.png" />
+               </image>
+            </ImageView>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="150.0">
+               <children>
+                  <ImageView fx:id="level_bar" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/glossy-web-buttons-set-different-colors_1017-17868-removebg-preview%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="level" alignment="CENTER" prefHeight="17.0" prefWidth="147.0" text="Label" textAlignment="CENTER" textFill="#f28314">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="30.0" prefWidth="150.0">
+               <children>
+                  <ProgressBar fx:id="atk" prefHeight="30.0" prefWidth="150.0" progress="0.37" />
+                  <Label fx:id="atkLabel" text="ATK: " textFill="#9a0000">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <ProgressBar fx:id="hp" prefHeight="30.0" prefWidth="155.0" progress="0.37" />
+                  <Label fx:id="hpLabel" text="Health:" textFill="#12b200">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <ProgressBar fx:id="phyShield" prefHeight="30.0" prefWidth="155.0" progress="0.0" />
+                  <Label fx:id="phyLabel" text="PhyShield:" textFill="#ebbc00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <ProgressBar fx:id="magicSheild" prefHeight="30.0" prefWidth="155.0" progress="0.0" />
+                  <Label fx:id="magicLabel" text="MagicShield:" textFill="#0019d3">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </StackPane>
+            <ImageView fx:id="endButton" fitHeight="55.0" fitWidth="147.0" onMouseClicked="#enemyAttck" pickOnBounds="true" scaleX="1.25">
+               <image>
+                  <Image url="@../../res/EndTurn.png" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="1000.0" spacing="0.5" style="-fx-background-color: LIGHTGREY; -fx-border-color: BLACK; -fx-border-width: 1.5;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="curStage" alignment="TOP_LEFT" prefHeight="14.0" prefWidth="967.0" text="Stage:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="back2menu" fitHeight="19.0" fitWidth="25.0" onMouseClicked="#back2Menu" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/Back.png" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="0.5" />
+         </padding></HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-image: url('file:res/ShopBG.PNG');" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShopController">
+   <top>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: LIGHTGREY; -fx-border-color: BLACK; -fx-border-width: 1.5;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#11c630" layoutX="6.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CASH:" textOrigin="CENTER" wrappingWidth="105.16455078125">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="moneyText" fill="#11c630" layoutX="66.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="880.5654296875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Text>
+            <ImageView fx:id="returnButton" fitHeight="19.0" fitWidth="25.0" layoutX="975.0" layoutY="3.0" onMouseClicked="#returnButtonHandler" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/Back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="675.0" prefWidth="396.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="treasureButton1" fitHeight="150.0" fitWidth="200.0" layoutX="98.0" layoutY="560.0" onMouseClicked="#treasureHandler" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/50$.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="297.0" prefWidth="337.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutX="-81.0" layoutY="-18.0" prefHeight="513.0" prefWidth="460.0">
+               <children>
+                  <VBox prefHeight="513.0" prefWidth="286.0" spacing="48.0">
+                     <children>
+                        <Text fx:id="tankText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Tank" wrappingWidth="170.52293586730957">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="DPSText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="DPS" wrappingWidth="164.06470108032227">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="mageText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Mage" wrappingWidth="150.5338249206543">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="healerText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Healer" wrappingWidth="165.58086395263672">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="bufferText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Buffer" wrappingWidth="172.84335327148438">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets left="82.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="513.0" prefWidth="132.0" spacing="45.0">
+                     <children>
+                        <Label fx:id="tankButton" onMouseClicked="#tankLevelUpHandler" text="20$" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="DPSButton" onMouseClicked="#DPSLevelUpHandler" text="20$" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="mageButton" onMouseClicked="#mageLevelUpHandler" text="20$" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="healerButton" onMouseClicked="#healerLevelUpHandler" text="20$" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bufferButton" onMouseClicked="#bufferLevelUpHandler" text="20$" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

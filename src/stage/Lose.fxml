@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoseController">
+   <top>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: LIGHTGREY; -fx-border-color: BLACK; -fx-border-width: 1.5;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="back2menu" fitHeight="19.0" fitWidth="25.0" layoutX="975.0" layoutY="3.0" onMouseClicked="#back2menu" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/Back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="839.0" prefWidth="950.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="184.0" fitWidth="915.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/YouLose.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="150.0" />
+               </VBox.margin>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0">
+               <children>
+                  <ImageView fx:id="TryAgain" fitHeight="20.0" fitWidth="135.0" onMouseClicked="#tryagain" onMouseEntered="#mouseEnter1" onMouseExited="#mouseExit" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../res/Try%20Again.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Shop" fitHeight="19.0" fitWidth="60.0" onMouseClicked="#go2shop" onMouseEntered="#mouseEnter2" onMouseExited="#mouseExit" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../res/Shop.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

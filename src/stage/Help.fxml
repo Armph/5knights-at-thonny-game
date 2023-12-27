@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #1B1B1B;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HelpController">
+   <top>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: LIGHTGREY; -fx-border-color: BLACK; -fx-border-width: 1.5;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="back2menu" fitHeight="19.0" fitWidth="25.0" layoutX="975.0" layoutY="3.0" onMouseClicked="#back2menuHandler" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/Back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <ImageView fitHeight="675.0" fitWidth="989.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../res/HelpMenu.png" />
+         </image>
+      </ImageView>
+   </center>
+   <left>
+      <Pane prefHeight="675.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

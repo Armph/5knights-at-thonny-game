@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <Label layoutX="941.0" layoutY="643.0" text="Offline" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="898.0" layoutY="664.0" text="App ver. 4.12" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="627.0" fitWidth="623.0" layoutX="189.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/But.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="351.0" layoutY="428.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="300.0" spacing="13.0">
+         <children>
+            <ImageView fx:id="newGameButton" fitHeight="20.0" fitWidth="127.0" onMouseClicked="#newGameButtonHandler" onMouseEntered="#mouseEnter1" onMouseExited="#mouseExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/NEW%20GAME.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="6.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="continueButton" fitHeight="19.0" fitWidth="118.0" onMouseClicked="#continueButtonHandler" onMouseEntered="#mouseEnter2" onMouseExited="#mouseExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/CONTINUE.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="shopButton" fitHeight="16.0" fitWidth="62.0" onMouseClicked="#shopButtonHandler" onMouseEntered="#mouseEnter3" onMouseExited="#mouseExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/SHOP.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="helpButton" fitHeight="15.0" fitWidth="55.0" onMouseClicked="#helpButtonHandler" onMouseEntered="#mouseEnter4" onMouseExited="#mouseExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/HELP.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.5" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fx:id="exitGameButton" fitHeight="15.0" fitWidth="40.0" onMouseClicked="#exitButtonHandler" onMouseEntered="#mouseEnter5" onMouseExited="#mouseExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/EXIT.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: HONEYDEW;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RewardController">
+   <top>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: LIGHTGREY; -fx-border-color: BLACK; -fx-border-width: 1.5;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="back2menuButton" fitHeight="19.0" fitWidth="25.0" layoutX="975.0" layoutY="3.0" onMouseClicked="#back2menuButtonHandler" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/Back.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="136.0" prefWidth="1000.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/YouWin.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="topicText" strokeType="OUTSIDE" strokeWidth="0.0" text="Please get your reward. (Pick one)" textAlignment="CENTER" wrappingWidth="1000.936767578125">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="71.0" prefWidth="1000.0" style="-fx-background-color: MINTCREAM; -fx-border-color: grey; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The reward for this level is" wrappingWidth="434.52734375">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Text>
+            <Text fx:id="rewardMoneyText" fill="#27ee3b" layoutX="449.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="continueButton" fitHeight="58.0" fitWidth="92.0" layoutX="894.0" layoutY="5.0" onMouseClicked="#continueButtonHandler" pickOnBounds="true">
+               <image>
+                  <Image url="@../../res/Next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="320.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="270.0" style="-fx-background-color: OLDLACE; -fx-border-color: black; -fx-border-width: 5;" />
+                  <ImageView fx:id="itemImage1" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image1Handler" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../res/deBuffPotion.png" />
+                     </image></ImageView>
+               </children>
+            </StackPane>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="320.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="270.0" style="-fx-background-color: OLDLACE; -fx-border-color: black; -fx-border-width: 5;" />
+                  <ImageView fx:id="itemImage2" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image2Handler" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../res/BuffShieldPotion.png" />
+                     </image></ImageView>
+               </children>
+            </StackPane>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="320.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="270.0" style="-fx-background-color: OLDLACE; -fx-border-color: black; -fx-border-width: 5;" />
+                  <ImageView fx:id="itemImage3" fitHeight="250.0" fitWidth="250.0" onMouseClicked="#image3Handler" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../res/BuffATKPotion.png" />
+                     </image></ImageView>
+               </children>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="90.0" />
+         </padding>
+      </HBox>
+   </center>
+</BorderPane>
